@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    </script>
+
+    <title>Lance Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/theme.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar-container">
+        <div class="navbar">
+          <a class="site-title" href="/">Lance Portfolio</a>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button
+            id="theme-toggle"
+            type="button"
+            aria-label="Switch to dark theme"
+          >
+            <i class="ph ph-moon" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="hero-container">
+        <h1>Hi, I'm Lance.</h1>
+
+        <h2>Junior Full-Stack Developer</h2>
+
+        <p>I enjoy understanding software, not just making it work.</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I graduated with a degree in Information Technology, and during that
+          journey I realized that completing projects wasn't enough if I didn't
+          truly understand how they worked. That realization led me to slow
+          down, rebuild my foundations, and focus on learning through real-world
+          projects.
+        </p>
+        <p>
+          I learn best by building, experimenting, and solving problems rather
+          than memorizing syntax. Each project helps me connect ideas across
+          different technologies while strengthening my confidence as a
+          developer.
+        </p>
+        <p>
+          As I continue rebuilding my foundations, I aim to write software that
+          is readable, maintainable, well documented, and developed with
+          security in mind so that it remains understandable for both users and
+          developers.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+
+          <h4>Overview</h4>
+          <p>
+            A personal portfolio website that introduces who I am, showcases my
+            work, and documents my growth as a software developer.
+          </p>
+
+          <h4>Purpose</h4>
+          <p>
+            To create a long-term professional portfolio while gaining practical
+            experience with web development, Linux, Git, documentation,
+            security, and cloud deployment.
+          </p>
+
+          <h4>Technologies Used</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git and GitHub</li>
+            <li>Linux with WSL2</li>
+          </ul>
+
+          <h4>Links</h4>
+          <p>
+            <a
+              class="project-link"
+              href="https://github.com/lancelis0827/lance-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository
+            </a>
+          </p>
+
+          <h4>What I Learned</h4>
+          <p>
+            This project strengthened my understanding of how HTML, CSS, and
+            JavaScript work together to build a responsive and accessible
+            website. It also gave me practical experience solving problems
+            through debugging, making deliberate design decisions, and improving
+            a project iteratively.
+          </p>
+
+          <h4>Future Improvements</h4>
+          <p>
+            Add additional projects, introduce a featured-project carousel when
+            multiple projects are available, and deploy and maintain the website
+            in AWS.
+          </p>
+        </article>
+      </section>
+
+      <section id="skills">
+        <h2>Skills &amp; Development</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Currently Using</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git and GitHub</li>
+              <li>Linux with WSL2</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Currently Learning</h3>
+            <ul>
+              <li>Web accessibility</li>
+              <li>AWS deployment</li>
+              <li>Application security</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Development Practices</h3>
+            <ul>
+              <li>Semantic HTML</li>
+              <li>Responsive web design</li>
+              <li>Version control</li>
+              <li>Readable and maintainable code</li>
+              <li>Security-conscious development</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+          Feel free to reach out if you'd like to connect, collaborate, or
+          discuss software development.
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://github.com/lancelis0827"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lancelis0827/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            Email:
+            <a href="mailto:lancelis0827@gmail.com">lancelis0827@gmail.com</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>© 2026 Lance. Built as part of my software development journey.</p>
+      </div>
+    </footer>
+  </body>
+</html>
