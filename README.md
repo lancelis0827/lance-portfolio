@@ -12,6 +12,12 @@ This project is built to:
 - Give me practical experience with web development, Linux, Git, security, and cloud deployment.
 - Continue evolving throughout my career.
 
+## Live Site
+
+The portfolio is deployed using Amazon S3 and CloudFront.
+
+[View Live Portfolio](https://d2kmbj4wznfhhq.cloudfront.net/)
+
 ## Technology Stack
 
 - HTML
@@ -19,6 +25,8 @@ This project is built to:
 - JavaScript
 - Git and GitHub
 - WSL2 Ubuntu 24.04
+- Amazon S3
+- Amazon CloudFront
 
 ## Current Features
 
@@ -43,14 +51,11 @@ This project is built to:
 - Added responsive styling for desktop and narrow screens.
 - Added automatic and manually controlled light and dark themes.
 - Added accessible keyboard interactions and focus states.
-- Added the initial portfolio project and development information.
-
-### Why
-
-To build a simple professional portfolio while strengthening my web development fundamentals through a real project.
+- Deployed the website using Amazon S3 and CloudFront.
 
 ### Next
 
-- Deploy the website to AWS.
 - Add new projects as they are completed.
+- Introduce a featured-project carousel when multiple projects are available.
+- Add a system-default option to the theme controls.
 - Continue improving the portfolio as my skills and experience grow.
